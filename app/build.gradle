@@ -5,17 +5,17 @@ android {
     buildToolsVersion "25.0.2"
     signingConfigs {
         debug {
-            keyAlias 'ecarstudent.keystore'
-            keyPassword 'android123'
-            storeFile file('../keyRelease/aa.keystore')
-            storePassword 'android123'
+            keyAlias 'key'
+            keyPassword '123456'
+            storeFile file('../keyRelease/lzf.jks')
+            storePassword '123456'
         }
 
         keysign {
-            keyAlias 'ecarstudent.keystore'
-            keyPassword 'android123'
-            storeFile file('../keyRelease/aa.keystore')
-            storePassword 'android123'
+            keyAlias 'key'
+            keyPassword '123456'
+            storeFile file('../keyRelease/lzf.jks')
+            storePassword '123456'
         }
     }
     defaultConfig {
