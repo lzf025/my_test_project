@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">极速api</string>
+    <string name="btn_confirm">确 定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="setting">去设置</string>
+    <string name="later_setting">暂不设置</string>
+    <string name="premission_tip">%1$s权限未开启\n请在应用设置中开启%1$s权限</string>
+
+</resources>

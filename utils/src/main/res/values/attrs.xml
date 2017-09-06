@@ -1,0 +1,50 @@
+<resources>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_isshow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleView">
+        <attr name="circle_border_width" format="dimension" />
+        <attr name="circle_border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starPadding" format="dimension" />
+        <attr name="starCount" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starHalf" format="reference" />
+        <attr name="clickable" format="boolean" />
+        <attr name="starStep" format="float" />
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="AuthNumberView">
+        <attr name="autoTextSize" format="boolean"/>
+        <attr name="editTextWH" format="dimension"/>
+        <attr name="codeTest" format="string"/>
+        <attr name="numberCount" format="integer"/>
+        <attr name="codeTextColor" format="color"/>
+        <attr name="codeTextSize" format="dimension"/>
+        <attr name="codePadding" format="dimension"/>
+        <attr name="borderSize" format="dimension"/>
+        <attr name="codeBgDrawable" format="reference"/>
+        <attr name="codeMargin" format="dimension"/>
+        <attr name="editStyle" format="string"/>
+        <attr name="linePadding" format="dimension"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="defaultLineColor" format="color"/>
+        <attr name="selectLineColor" format="color"/>
+        <attr name="lineMarginTop" format="dimension"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dialog_tip_text_color">#ffb0b0b0</color>
+    <color name="loading_text_color">#ff060606</color>
+    <color name="color_black_hui">#ababab</color>
+    <color name="color_black_hui2">#858585</color>
+    <!-- 白色 -->
+    <color name="white">#ffffff</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <color name="gray">#ff9a9b9c</color>
+    <color name="black_car">#666666</color>
+    <!-- 蓝色 -->
+    <color name="blue">#25b6ed</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#000000</color>
+    <color name="yellow_other">#FFE252</color>
+    <color name="school_detail_class_type_des_bg">#fef8f3</color>
+    <color name="red_color">#FF5C42</color>
+    <color name="main_color">#0cc0a1</color>
+    <color name="text_normal">#666666</color>
+    <color name="text_weak">#a4a4a4</color>
+    <color name="text_strong">#333333</color>
+    <color name="text_link">#0088ff</color>
+    <color name="text_price">#ff2b2b</color>
+    <color name="balance_red">#e9503b</color>
+    <color name="balance_blue">#0088ff</color>
+    <color name="text_class_type_bg">#ff5e44</color>
+    <color name="bg_color_f8">#f8f8f8</color>
+    <color name="bg_color_f2">#f2f2f2</color>
+    <color name="bg_color_f6">#f6f6f6</color>
+    <color name="divide_color">#dedede</color>
+    <color name="green_light">#0bc9a8</color>
+    <color name="roll_view_bg">#2b2c4d</color>
+    <color name="black_trans80">#cc000000</color>
+    <color name="black_trans30">#7f000000</color>
+    <color name="black_trans60">#99000000</color>
+    <color name="coupon_lose_effect">#989898</color>
+    <color name="car_point_blue">#2583cb</color>
+
+
+
+    <color name="white_light">#dddddd</color>
+    <color name="black">#000000</color> <!--黑-->
+    <color name="black_light">#363636</color> <!--黑-->
+    <color name="light_gray">#dcdcdc</color>
+
+    <color name="canclick_hui">#c3c3c3</color>
+    <color name="table_deliver">#EEEEEE</color>
+    <color name="kf5_folder_item_text_color">#AFAFAF</color>
+    <color name="kf5_image_selector_background_color">#181819</color>
+    <color name="wrong_color">#f44646</color>
+
+    <!--成绩pk自己排名标注色-->
+    <color name="light_yellow">#fdf5d8</color>
+</resources>

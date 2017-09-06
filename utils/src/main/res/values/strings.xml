@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">utils</string>
+    <string name="submit_message">努力提交中...</string>
+    <string name="loading_message">努力加载中...</string>
+    <string name="dialog_progress_loading">数据加载中</string>
+    <string name="loading">正在加载...</string>
+    <string name="string_take_photo">拍照</string>
+    <string name="string_select_pic">从手机相册选择</string>
+    <string name="string_cancel">取消</string>
+    <string name="kf5_action_select_photo">图片选择</string>
+    <string name="kf5_action_done">完成</string>
+    <string name="kf5_photo_all">所有照片</string>
+    <string name="kf5_image_error">图片错误</string>
+    <string name="kf5_no_camera_hint">没有系统相机</string>
+    <string name="kf5_photo_amount_limit_hint">最大图片数量不能超过%1$s张</string>
+    <string name="kf5_photo_unit">张</string>
+    <string name="kf5_action_take_photo">拍摄照片</string>
+    <string name="downloading">下载中...</string>
+    <string name="cancel">取消</string>
+    <string name="reloading">重试</string>
+    <string name="load_error">下载失败</string>
+    <string name="loading_sucess">下载完毕</string>
+    <string name="comfire">确定</string>
+    <string name="load_more_error">数据加载失败,请重试</string>
+</resources>

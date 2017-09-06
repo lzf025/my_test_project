@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="baseButton" parent="@android:style/Widget.CompoundButton">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--分割线-->
+    <style name="divide_view_h1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divide_color</item>
+    </style>
+
+    <style name="divide_view_h20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y20</item>
+        <item name="android:background">@color/bg_color_f2</item>
+    </style>
+
+    <style name="normalButton" parent="baseButton">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="titleButton" parent="baseButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">@dimen/y70</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--title-->
+    <style name="tool_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/y104</item>
+    </style>
+
+    <style name="tv_40_level">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/y40</item>
+        <item name="android:textColor">@color/text_strong</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- h0特级标题 -->
+    <style name="text_special_title" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y36</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- h1一级标题 strong-->
+    <style name="text_one_level_title_strong" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y32</item>
+        <item name="android:textColor">@color/text_strong</item>
+    </style>
+
+    <!-- h1一级标题 white-->
+    <style name="text_one_level_title_white" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y32</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- h2详情标题 strong -->
+    <style name="text_detail_title_strong" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y28</item>
+        <item name="android:textColor">@color/text_strong</item>
+    </style>
+
+    <!-- h2详情标题 normal -->
+    <style name="text_detail_title_normal" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y28</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <!-- h3内容字号 -->
+    <style name="text_content" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y26</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <!-- h4偏小字号 -->
+    <style name="text_small" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y24</item>
+        <item name="android:textColor">@color/text_weak</item>
+    </style> <!-- h4偏小字号 -->
+    <style name="text_small_22" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y22</item>
+        <item name="android:textColor">@color/text_weak</item>
+    </style>
+    <style name="text_small_normal" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y24</item>
+        <item name="android:textColor">@color/text_normal</item>
+    </style>
+
+    <!-- h5超小字号 -->
+    <style name="text_more_small" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y20</item>
+        <item name="android:textColor">@color/text_weak</item>
+    </style>
+
+    <!-- Tab -->
+    <style name="text_tab" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y20</item>
+    </style>
+
+    <style name="tv_24_level" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y24</item>
+    </style>
+
+    <style name="tv_22_level" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y22</item>
+    </style>
+
+    <style name="tv_20_level" parent="tv_40_level">
+        <item name="android:textSize">@dimen/y20</item>
+    </style>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="bottomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/bottomDialogAnim</item>
+    </style>
+
+    <style name="bottomDialogAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bottom_dialog_enter
+        </item>
+        <item name="@android:windowExitAnimation">@anim/bottom_dialog_exit
+        </item>
+    </style>
+
+    <style name="NormalDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/MDDialogAnim</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ShareDialogStyle" parent="NormalDialogStyle">
+        <item name="android:windowAnimationStyle">@style/shareDialogAnim</item>
+    </style>
+
+    <style name="shareDialogAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/center_scale_enter
+        </item>
+        <item name="@android:windowExitAnimation">@anim/center_scale_exit
+        </item>
+    </style>
+
+    <style name="normalDialogAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/normal_dialog_enter
+        </item>
+        <item name="@android:windowExitAnimation">@anim/normal_dialog_exit
+        </item>
+    </style>
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MDDialogAnim" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/bottom_dialog_enter
+        </item>
+        <item name="@android:windowExitAnimation">@anim/bottom_dialog_exit
+        </item>
+    </style>
+
+    <style name="TransparentMenuDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="OaMenuDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PopMenuAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/oa_menu_in</item>
+        <item name="android:windowExitAnimation">@anim/oa_menu_out</item>
+    </style>
+
+    <style name="KF5FileListPopAnim">
+        <item name="android:windowEnterAnimation">@anim/kf5_file_list_slide_in</item>
+        <item name="android:windowExitAnimation">@anim/kf5_file_list_slide_out</item>
+    </style>
+
+    <style name="SexCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_sex_style</item>
+    </style>
+
+</resources>
