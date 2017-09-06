@@ -7,14 +7,14 @@ android {
         debug {
             keyAlias 'ecarstudent.keystore'
             keyPassword 'android123'
-            storeFile file('../keyRelease/ecarstudent.keystore')
+            storeFile file('../keyRelease/aa.keystore')
             storePassword 'android123'
         }
 
         keysign {
             keyAlias 'ecarstudent.keystore'
             keyPassword 'android123'
-            storeFile file('../keyRelease/ecarstudent.keystore')
+            storeFile file('../keyRelease/aa.keystore')
             storePassword 'android123'
         }
     }
