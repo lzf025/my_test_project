@@ -6,6 +6,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许对sd卡进行读写操作-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:name=".global.MyApplication"
@@ -25,7 +28,19 @@
         <activity android:name=".view.activity.CategotyActivity" />
         <activity android:name=".view.activity.GourmetDetailsActivity" />
         <activity android:name=".view.activity.ImagerActivity" />
-        <activity android:name=".view.activity.ChoseClassActivity"/>
+        <activity android:name=".view.activity.ChoseClassActivity" />
+        <activity android:name=".view.activity.ImageCompressActivity" />
+
+        <service
+            android:name=".services.AidlTestAService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.li.food.services.AidlTestAService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".view.activity.AidlTestActivity"></activity>
     </application>
 
 </manifest>

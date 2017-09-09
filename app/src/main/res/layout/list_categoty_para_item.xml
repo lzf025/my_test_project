@@ -2,16 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:gravity="center">
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:minHeight="@dimen/y80"
+    android:orientation="horizontal">
 
-    <TextView
+    <View
+        android:id="@+id/choseTag"
+        android:layout_width="@dimen/y5"
+        android:layout_height="match_parent"
+        android:background="@drawable/categoty_tag_selector"
+        android:clickable="false"
+        android:focusable="false"></View>
+
+    <Button
         android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="3dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
         android:text="我是一级菜单"
-        android:textSize="16dp"
-        android:gravity="center"
-        android:layout_gravity="center_vertical"/>
+        android:textColor="@drawable/categoty_item"
+        android:textSize="@dimen/y28" />
+
 </LinearLayout>

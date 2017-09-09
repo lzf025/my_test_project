@@ -1,7 +1,8 @@
 package com.li.food.global;
 
-import android.app.Application;
 import android.content.Context;
+import android.support.multidex.MultiDex;
+import android.support.multidex.MultiDexApplication;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.ggxueche.utils.log.L;
@@ -17,7 +18,7 @@ import com.squareup.leakcanary.RefWatcher;
 import okhttp3.logging.HttpLoggingInterceptor;
 
 
-public class MyApplication extends Application {
+public class MyApplication extends MultiDexApplication {
 
     public static Context mContext;
     private RefWatcher mRefWatcher;
@@ -26,7 +27,11 @@ public class MyApplication extends Application {
         MyApplication application = (MyApplication) context.getApplicationContext();
         return application.mRefWatcher;
     }
-
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        MultiDex.install(this);
+    }
     @Override
     public void onCreate() {
         super.onCreate();

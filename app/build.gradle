@@ -25,6 +25,7 @@ android {
         versionCode 1
         versionName "1.0"
         signingConfig signingConfigs.keysign
+        multiDexEnabled = true//突破65535限制
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         javaCompileOptions {
             annotationProcessorOptions {
@@ -64,6 +65,7 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
     compile 'com.alibaba:arouter-api:1.2.1.1'
     compile 'com.alibaba:arouter-annotation:1.0.3'
+    compile 'com.android.support:multidex:1.0.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'

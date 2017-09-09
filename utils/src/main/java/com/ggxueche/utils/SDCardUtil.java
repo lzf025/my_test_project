@@ -22,25 +22,26 @@ public class SDCardUtil {
 
     /**
      * 判断sd卡是否可用
-     * 
+     *
      * @return
      */
     public static boolean isSDCardAvailable() {
         return Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
                 || !Environment.isExternalStorageRemovable();
     }
-    
+
     /**
      * 大于50M返回true;
-     * 
+     *
      * @return
      */
     public static boolean isSDCardCanWrite() {
         return isSDCardCanWrite(50);
     }
-    
+
     /**
      * 传入指定大小，可用空间小于指定大小，或sd卡不可用时，返回false
+     *
      * @param minSize
      * @return
      */
@@ -59,14 +60,15 @@ public class SDCardUtil {
 
     /**
      * 获取SD卡根路径
+     *
      * @return
      */
     public static File getSDCardRootDir() {
         return Environment.getExternalStorageDirectory();
     }
-    
+
     public static String getSDCardRootDirPath() {
-        return Environment.getExternalStorageDirectory().getAbsolutePath()+File.separator;
+        return Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator;
     }
 
     /**
@@ -83,30 +85,33 @@ public class SDCardUtil {
 
     /**
      * 获取应用文件根目录
+     *
      * @return /sdcard/ecar/
      */
-    public static String getAppStorageRoot(){
-        String path = getSDCardRootDirPath() + APP_STORAGE_ROOT +File.separator;
+    public static String getAppStorageRoot() {
+        String path = getSDCardRootDirPath() + APP_STORAGE_ROOT + File.separator;
         boolean dirs = createDirs(path);
         return path;
     }
 
     /**
      * 获取应用 文件存储路径
+     *
      * @return /sdcard/ecar/file/
      */
-    public static String getAppFileDir(){
-        String path = getAppStorageRoot()+FILE_DIR+File.separator;
+    public static String getAppFileDir() {
+        String path = getAppStorageRoot() + FILE_DIR + File.separator;
         boolean dirs = createDirs(path);
         return path;
     }
 
     /**
      * 获取应用图片存储路径
+     *
      * @return /sdcard/ecar/icon/
      */
-    public static String getAppIconDir(){
-        String path = getAppStorageRoot()+ICON_DIR+File.separator;
+    public static String getAppIconDir() {
+        String path = getAppStorageRoot() + ICON_DIR + File.separator;
         createDirs(path);
         return path;
     }

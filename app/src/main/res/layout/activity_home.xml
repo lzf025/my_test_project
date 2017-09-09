@@ -9,21 +9,35 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试api"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="10dp" />
+        android:text="菜谱api"
+ />
     <Button
         android:id="@+id/buttonImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试图片显示"
+        android:text="图片显示"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="58dp" />
     <Button
         android:id="@+id/btChoseClass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="测试选课日期控件"
+        android:text="选课日期控件"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="58dp" />
+    <Button
+        android:id="@+id/btImageCompress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="图片压缩"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <Button
+        android:id="@+id/btCarKeyboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车牌设置键盘"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="58dp" />
 </LinearLayout>

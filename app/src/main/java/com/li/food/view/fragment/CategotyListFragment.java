@@ -54,7 +54,9 @@ public class CategotyListFragment extends BaseFragment<CategrotyListPresenter, I
 
     @Override
     protected void initView() {
-        recyclerChild.setLayoutManager(new LinearLayoutManager(getContext()));
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
+        layoutManager.setAutoMeasureEnabled(true);
+        recyclerChild.setLayoutManager(layoutManager);
         recycler3.setLayoutManager(new LinearLayoutManager(getContext()));
 
     }
@@ -81,6 +83,7 @@ public class CategotyListFragment extends BaseFragment<CategrotyListPresenter, I
                 String classId = categoryItemList.get(position).getClassid();
                 ToastUtil.showCenterToast(getContext(), classId);
                 presenter.getClassById(classId, "0", "300");
+                categoty_itemAdapter.setmClikePostion(position);
             }
 
             @Override

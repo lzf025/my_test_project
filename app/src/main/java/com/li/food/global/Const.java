@@ -12,6 +12,8 @@ public class Const {
     public static final String ACTIVITY_CATEGOTY = "/activity/categoty";
     //菜谱详情
     public static final String ACTIVITY_GOURMETDETAILS = "/activity/GourmetDetails";
+    //图片测试
+    public static final String ACTIVITY_IMAGE_TEST = "/activity/ImageTest";
 
 
 }

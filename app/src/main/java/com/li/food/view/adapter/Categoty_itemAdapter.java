@@ -1,6 +1,8 @@
 package com.li.food.view.adapter;
 
 import android.content.Context;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.ggxueche.utils.adapter.CommonAdapter;
 import com.ggxueche.utils.adapter.CommonViewHolder;
@@ -11,7 +13,6 @@ import java.util.List;
 
 /**
  * 菜单二级分类
- *
  */
 
 public class Categoty_itemAdapter extends CommonAdapter<Category3Bean> {
@@ -22,7 +23,14 @@ public class Categoty_itemAdapter extends CommonAdapter<Category3Bean> {
 
     @Override
     protected void convert(CommonViewHolder holder, Category3Bean categoryBean, int position) {
-        holder.setText(R.id.name,categoryBean.getName());
+        if (getmClikePostion() == position) {
+            holder.getView(R.id.name).setSelected(true);
+            holder.getView(R.id.choseTag).setSelected(true);
+        } else {
+            holder.getView(R.id.name).setSelected(false);
+            holder.getView(R.id.choseTag).setSelected(false);
+        }
+        holder.setText(R.id.name, categoryBean.getName());
 
     }
 

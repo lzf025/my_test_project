@@ -185,12 +185,13 @@ public class PhotoFileUtils {
 
     /**
      * 保存Bitmap到本地
+     *
      * @param mBitmap
      * @param imageType
      * @return
      */
     public static String saveBitmap(Bitmap mBitmap, int imageType) {
-        String savePath=generateImgePath(imageType);
+        String savePath = generateImgePath(imageType);
         File filePic;
         try {
             filePic = new File(savePath);
@@ -199,7 +200,7 @@ public class PhotoFileUtils {
                 filePic.createNewFile();
             }
             FileOutputStream fos = new FileOutputStream(filePic);
-            mBitmap.compress(mImageType==0?Bitmap.CompressFormat.JPEG:Bitmap.CompressFormat.PNG, 100, fos);
+            mBitmap.compress(mImageType == 0 ? Bitmap.CompressFormat.JPEG : Bitmap.CompressFormat.PNG, 100, fos);
             fos.flush();
             fos.close();
         } catch (IOException e) {

@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         // 无标题
 
         setContentView(R.layout.activity_home);
-
+        ARouter.getInstance().build(Const.ACTIVITY_CATEGOTY).navigation();
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +47,18 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent =new Intent(HomeActivity.this,ChoseClassActivity.class);
                 startActivity(intent);
+            }
+        });
+        findViewById(R.id.btImageCompress).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ARouter.getInstance().build(Const.ACTIVITY_IMAGE_TEST).navigation();
+            }
+        });
+        findViewById(R.id.btCarKeyboard).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
