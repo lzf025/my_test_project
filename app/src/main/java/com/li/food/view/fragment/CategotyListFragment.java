@@ -81,7 +81,6 @@ public class CategotyListFragment extends BaseFragment<CategrotyListPresenter, I
             @Override
             public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
                 String classId = categoryItemList.get(position).getClassid();
-                ToastUtil.showCenterToast(getContext(), classId);
                 presenter.getClassById(classId, "0", "300");
                 categoty_itemAdapter.setmClikePostion(position);
             }
@@ -95,7 +94,6 @@ public class CategotyListFragment extends BaseFragment<CategrotyListPresenter, I
             @Override
             public void onItemClick(View view, RecyclerView.ViewHolder holder, int position) {
                 FoodDetailBean foodDetailBean = foodList.get(position);
-                ToastUtil.showToast(getContext(), foodDetailBean.getName());
                 ARouter.getInstance().build(Const.ACTIVITY_GOURMETDETAILS).withObject("foodDetail", foodDetailBean).navigation();
             }
 

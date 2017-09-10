@@ -87,14 +87,14 @@ public abstract class BaseFragment<P extends IPresenter<V>, V extends IMvpView> 
     public void showLoading() {
         //加载中
         L.t(TAG).i("showLoading: ==== 加载中");
-//        DialogManager.getInstance().showProgressBarDialog(getActivity());
+        DialogManager.getInstance().showProgressBarDialog(getActivity());
     }
 
     @Override
     public void hideLoading() {
         //加载完成
         L.t(TAG).i("hideLoading: ==== 加载完成");
-//        DialogManager.getInstance().dismissDialog();
+        DialogManager.getInstance().dismissDialog();
     }
 
     @Override

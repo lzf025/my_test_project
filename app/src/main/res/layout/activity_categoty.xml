@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         app:tabIndicatorColor="@color/white"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
         app:tabBackground="@color/text_class_type_bg"
         app:tabTextColor="@color/white"
         app:tabSelectedTextColor="@color/white"

@@ -3,44 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/y21"
+    android:layout_marginRight="@dimen/y21"
     android:orientation="vertical"
     tools:context="com.li.food.view.activity.GourmetDetailsActivity">
 
-    <TextView
-        android:id="@+id/cookName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <ImageView
-        android:id="@+id/cookPic"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:id="@+id/scrollView">
 
-    <TextView
-        android:id="@+id/cookPeopleNum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/cookPreTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <include layout="@layout/gourmet_detail_head"></include>
 
-    <TextView
-        android:id="@+id/cookIngTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <TextView
+                style="@style/ContentSmallTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y21"
+                android:background="@null"
+                android:drawableLeft="@mipmap/shopping_title_icon"
+                android:drawablePadding="@dimen/x10"
+                android:text="食材明细" />
 
-    <TextView
-        android:id="@+id/cookContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/cookTag"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <TextView
+                style="@style/ContentSmallTextSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y21"
+                android:background="@null"
+                android:drawableLeft="@mipmap/shopping_title_icon"
+                android:drawablePadding="@dimen/x10"
+                android:text="步骤" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerProcess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/y40" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>

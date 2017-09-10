@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.li.food.view.activity.GourmetDetailsActivity">
+
+    <TextView
+        android:id="@+id/cookName"
+        style="@style/ContentLargeTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10"
+        android:text="ssdfsadfs" />
+    <ImageView
+        android:id="@+id/cookPic"
+        android:layout_width="@dimen/x280"
+        android:layout_height="@dimen/x280" />
+
+
+
+    <TextView
+        android:id="@+id/cookPeopleNum"
+        style="@style/ContentTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10" />
+
+    <TextView
+        android:id="@+id/cookPreTime"
+        style="@style/ContentTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10" />
+
+    <TextView
+        android:id="@+id/cookIngTime"
+        style="@style/ContentTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10" />
+
+    <TextView
+        android:id="@+id/cookContent"
+        style="@style/ContentTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10" />
+
+    <TextView
+        android:id="@+id/cookTag"
+        style="@style/ContentTextSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10" />
+
+
+</LinearLayout>

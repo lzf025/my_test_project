@@ -15,8 +15,8 @@ public class BaseMultiItemAdapter<T> extends RecyclerView.Adapter<CommonViewHold
     protected List<T> mDatas;
     private boolean clickFlag = true;
 
-    //点击的位置记录 -1
-    private int mClikePostion = -1;
+    //点击的位置记录 0
+    private int mClikePostion = 0;
 
     protected ItemViewDelegateManager mItemViewDelegateManager;
     protected OnItemClickListener mOnItemClickListener;

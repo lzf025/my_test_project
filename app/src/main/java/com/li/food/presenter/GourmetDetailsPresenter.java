@@ -18,12 +18,6 @@ public class GourmetDetailsPresenter extends BasePresenter<IGourmetDetailsView> 
     public GourmetDetailsPresenter() {
         gourmetModel = new GourmetModel(this);
     }
-    public void aa(){
-        gourmetModel.calcTime();
-    }
-    //TODO 模拟计时测试内存泄漏
-
-
 
     @Override
     public void onDestroy() {
