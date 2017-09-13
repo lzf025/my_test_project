@@ -1,24 +1,16 @@
 package com.li.food.view.activity;
 
-import android.content.res.Resources;
-import android.os.Handler;
-import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.ggxueche.utils.DateUtil;
 import com.ggxueche.utils.ToastUtil;
 import com.li.food.R;
-import com.li.food.bean.BaseBean;
-import com.li.food.bean.CategoryBean;
 import com.li.food.model.bean.DateBean;
-import com.li.food.network.HttpUtils;
-import com.li.food.network.RequestCallBack;
 import com.li.food.view.adapter.AgeAdapter;
 import com.li.food.view.widget.AutoLocateHorizontalView;
 import com.li.food.view.widget.HorizontalNavigationBar;
@@ -26,8 +18,6 @@ import com.li.food.view.widget.HorizontalNavigationBar;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import retrofit2.Call;
 
 public class ChoseClassActivity extends AppCompatActivity implements HorizontalNavigationBar.SelectDate {
 

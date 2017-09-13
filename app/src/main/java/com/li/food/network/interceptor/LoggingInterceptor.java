@@ -7,7 +7,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 
 /**
  * 日志拦截器
- * Created by likunyang on 2017/5/17.
+ * Created by lzf on 2017/5/17.
  */
 
 public class LoggingInterceptor implements HttpLoggingInterceptor.Logger {

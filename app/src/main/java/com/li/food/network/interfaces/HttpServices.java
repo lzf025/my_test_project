@@ -20,7 +20,7 @@ import retrofit2.http.Url;
 
 /**
  * 请求接口
- * Created by likunyang on 2017/5/17.
+ * Created by lzf on 2017/8/17.
  */
 
 public interface HttpServices {

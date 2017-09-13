@@ -2,7 +2,7 @@ package com.li.food.model;
 
 import android.util.Log;
 import com.li.food.bean.BaseBean;
-import com.li.food.bean.CategoryBean;
+import com.li.food.bean.CategoryOneBean;
 import com.li.food.global.Const;
 import com.li.food.network.HttpUtils;
 import com.li.food.network.RequestCallBack;
@@ -28,9 +28,9 @@ public class CategoryModel extends BaseModel<CategrotyPresenter> {
         if (cheNetWork()) return;
         mPresenter.getMvpView().showLoading();
         Log.i("-------", "getFoodCategory: " + "");
-        RequestCallBack<BaseBean, List<CategoryBean>> foodCategoryCallBack = new RequestCallBack<BaseBean, List<CategoryBean>>() {
+        RequestCallBack<BaseBean, List<CategoryOneBean>> foodCategoryCallBack = new RequestCallBack<BaseBean, List<CategoryOneBean>>() {
             @Override
-            protected void onSucess(List<CategoryBean> data) {
+            protected void onSucess(List<CategoryOneBean> data) {
                 mPresenter.getMvpView().addCatrgoty(data);
             }
 

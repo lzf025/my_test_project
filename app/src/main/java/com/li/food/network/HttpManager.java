@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 /**
- * Created by likunyang on 2017/5/16.
+ * Created by lzf on 2017/7/16.
  */
 
 public class HttpManager {

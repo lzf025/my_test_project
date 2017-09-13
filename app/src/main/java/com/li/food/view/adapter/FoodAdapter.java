@@ -7,7 +7,6 @@ import com.ggxueche.utils.GlideImgManager;
 import com.ggxueche.utils.adapter.CommonAdapter;
 import com.ggxueche.utils.adapter.CommonViewHolder;
 import com.li.food.R;
-import com.li.food.bean.CategoryBean;
 import com.li.food.bean.FoodDetailBean;
 
 import java.util.List;

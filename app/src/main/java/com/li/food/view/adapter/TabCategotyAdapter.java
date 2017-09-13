@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.li.food.bean.CategoryBean;
+import com.li.food.bean.CategoryOneBean;
 import com.li.food.view.fragment.CategotyListFragment;
 
 import java.util.List;
@@ -14,9 +14,9 @@ import java.util.List;
  */
 
 public class TabCategotyAdapter extends FragmentStatePagerAdapter {
-    private List<CategoryBean> categoryList;
+    private List<CategoryOneBean> categoryList;
 
-    public TabCategotyAdapter(FragmentManager fm, List<CategoryBean> categoryList) {
+    public TabCategotyAdapter(FragmentManager fm, List<CategoryOneBean> categoryList) {
         super(fm);
         this.categoryList = categoryList;
     }

@@ -1,28 +1,17 @@
 package com.li.food.bean;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
- * 菜单分类
+ * 菜单二级分类
  * Created by lzf on 2017/8/5.
  */
 
-public class CategoryBean implements Serializable {
+public class CategoryTwoBean implements Serializable {
 
     private String classid;
     private String name;
     private String parentid;
-    private List<Category3Bean> list;
-
-    public List<Category3Bean> getList() {
-        return list;
-    }
-
-    public void setList(List<Category3Bean> list) {
-        this.list = list;
-    }
-
 
     public String getClassid() {
         return classid;
@@ -48,5 +37,12 @@ public class CategoryBean implements Serializable {
         this.parentid = parentid;
     }
 
-
+    @Override
+    public String toString() {
+        return "CategoryTwoBean{" +
+                "classid='" + classid + '\'' +
+                ", name='" + name + '\'' +
+                ", parentid='" + parentid + '\'' +
+                '}';
+    }
 }

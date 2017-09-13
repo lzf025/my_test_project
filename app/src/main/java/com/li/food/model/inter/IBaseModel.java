@@ -1,7 +1,7 @@
 package com.li.food.model.inter;
 
 /**
- * Created by yaofc on 2017/5/19.
+ * Created by lzf on 2017/5/19.
  */
 
 public interface IBaseModel {

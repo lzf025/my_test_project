@@ -26,23 +26,6 @@ public class FoodDetailBean implements Serializable {
     private String cookingtime;
     private String pic;
     private String content;
-
-    public String getPic() {
-        return pic;
-    }
-
-    public void setPic(String pic) {
-        this.pic = pic;
-    }
-
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
     private String tag;
 
     private List<MaterialBean> material;
@@ -120,6 +103,21 @@ public class FoodDetailBean implements Serializable {
         this.content = content;
     }
 
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
 
 
 }

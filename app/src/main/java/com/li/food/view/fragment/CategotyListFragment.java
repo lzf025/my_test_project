@@ -6,11 +6,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.alibaba.android.arouter.launcher.ARouter;
-import com.ggxueche.utils.ToastUtil;
 import com.ggxueche.utils.adapter.BaseMultiItemAdapter;
 import com.li.food.R;
-import com.li.food.bean.Category3Bean;
-import com.li.food.bean.CategoryBean;
+import com.li.food.bean.CategoryTwoBean;
+import com.li.food.bean.CategoryOneBean;
 import com.li.food.bean.FoodDetailBean;
 import com.li.food.global.Const;
 import com.li.food.presenter.CategrotyListPresenter;
@@ -34,15 +33,15 @@ public class CategotyListFragment extends BaseFragment<CategrotyListPresenter, I
     @BindView(R.id.recycler3)
     RecyclerView recycler3;
 
-    List<Category3Bean> categoryItemList = new ArrayList<>();
+    List<CategoryTwoBean> categoryItemList = new ArrayList<>();
     List<FoodDetailBean> foodList = new ArrayList<>();
     private Categoty_itemAdapter categoty_itemAdapter;
     private FoodAdapter foodAdapter;
 
-    public static CategotyListFragment newInstance(CategoryBean categoryBean) {
+    public static CategotyListFragment newInstance(CategoryOneBean categoryOneBean) {
         CategotyListFragment fragment = new CategotyListFragment();
         Bundle args = new Bundle();
-        args.putSerializable("categoryBean", categoryBean);
+        args.putSerializable("categoryOneBean", categoryOneBean);
         fragment.setArguments(args);
         return fragment;
     }
@@ -68,8 +67,8 @@ public class CategotyListFragment extends BaseFragment<CategrotyListPresenter, I
         recyclerChild.setAdapter(categoty_itemAdapter);
         recycler3.setAdapter(foodAdapter);
         Bundle args = getArguments();
-        CategoryBean categoryBean = (CategoryBean) args.getSerializable("categoryBean");
-        categoty_itemAdapter.addItem(true, categoryBean.getList());
+        CategoryOneBean categoryOneBean = (CategoryOneBean) args.getSerializable("categoryOneBean");
+        categoty_itemAdapter.addItem(true, categoryOneBean.getList());
 
 
     }

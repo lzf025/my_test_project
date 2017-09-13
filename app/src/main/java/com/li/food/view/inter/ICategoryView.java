@@ -1,7 +1,6 @@
 package com.li.food.view.inter;
 
-import com.li.food.bean.CategoryBean;
-import com.li.food.bean.FoodDetailBean;
+import com.li.food.bean.CategoryOneBean;
 
 import java.util.List;
 
@@ -13,7 +12,7 @@ import retrofit2.Call;
 
 public interface ICategoryView extends IMvpView {
 
-    void addCatrgoty(List<CategoryBean>  data);
+    void addCatrgoty(List<CategoryOneBean>  data);
     void onFaile(Call call, Throwable t, int code, String errorMsg);
 
 }

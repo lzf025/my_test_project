@@ -3,16 +3,12 @@ package com.li.food.view.activity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.li.food.R;
-import com.li.food.bean.CategoryBean;
-import com.li.food.bean.FoodDetailBean;
+import com.li.food.bean.CategoryOneBean;
 import com.li.food.global.Const;
 import com.li.food.presenter.CategrotyPresenter;
-import com.li.food.view.adapter.CategotyAdapter;
 import com.li.food.view.adapter.TabCategotyAdapter;
 import com.li.food.view.inter.ICategoryView;
 
@@ -29,7 +25,7 @@ public class CategotyActivity extends BaseActivity<CategrotyPresenter, ICategory
     ViewPager viewPager;
     @BindView(R.id.tablayout)
     TabLayout tablayout;
-    List<CategoryBean> categoryList = new ArrayList<>();
+    List<CategoryOneBean> categoryList = new ArrayList<>();
 
     TabCategotyAdapter tabCategotyAdapter;
 
@@ -54,7 +50,7 @@ public class CategotyActivity extends BaseActivity<CategrotyPresenter, ICategory
     }
 
     @Override
-    public void addCatrgoty(List<CategoryBean> data) {
+    public void addCatrgoty(List<CategoryOneBean> data) {
         categoryList.addAll(data);
         tabCategotyAdapter = new TabCategotyAdapter(getSupportFragmentManager(),categoryList);
         viewPager.setAdapter(tabCategotyAdapter);
