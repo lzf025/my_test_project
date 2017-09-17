@@ -21,7 +21,7 @@ public class GourmetModel extends BaseModel<GourmetDetailsPresenter> {
         timer = new Timer();
         timer.schedule(new TimerTask() {
             public void run() {
-                L.d("run: ");
+                Log.i("lzf", "run: ");
             }
         }, 3000 , 1000);
     }

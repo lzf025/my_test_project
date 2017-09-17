@@ -18,12 +18,14 @@ public class GourmetDetailsPresenter extends BasePresenter<IGourmetDetailsView> 
     public GourmetDetailsPresenter() {
         gourmetModel = new GourmetModel(this);
     }
-
+    public void test(){
+        gourmetModel.calcTime();
+    };
     @Override
     public void onDestroy() {
         super.onDestroy();
-        gourmetModel.cancleTime();
-        gourmetModel = null;
+        //gourmetModel.cancleTime();
+        //gourmetModel = null;
 
     }
 }

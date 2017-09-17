@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         // 无标题
 
         setContentView(R.layout.activity_home);
-        ARouter.getInstance().build(Const.ACTIVITY_CATEGOTY).navigation();
+        //ARouter.getInstance().build(Const.ACTIVITY_CATEGOTY).navigation();
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +58,8 @@ public class HomeActivity extends AppCompatActivity {
         findViewById(R.id.btCarKeyboard).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent =new Intent(HomeActivity.this,LeakActivity.class);
+                startActivity(intent);
             }
         });
 

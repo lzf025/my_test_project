@@ -33,7 +33,6 @@ android {
             }
         }
     }
-
     buildTypes {
         debug {
             minifyEnabled false
@@ -47,6 +46,11 @@ android {
     configurations.all {
         resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
     }
+    repositories {
+        flatDir {
+            dirs '../utils/libs';
+        }
+    }
 }
 greendao {
     schemaVersion 5 //数据库版本号
@@ -57,35 +61,19 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
+
     }
     dependencies {
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
     }
 }
-
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile project(':utils')
-    compile 'org.greenrobot:greendao:3.2.2'
-
-    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
-    compile 'com.squareup.retrofit2:retrofit:2.3.0'
-    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
-    compile 'com.squareup.okhttp3:okhttp:3.8.0'
-    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
-    compile 'com.alibaba:arouter-api:1.2.1.1'
-    compile 'com.alibaba:arouter-annotation:1.0.3'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
-    testCompile 'junit:junit:4.12'
+    compile(name: 'basemodule-release', ext: 'aar')
     annotationProcessor 'com.alibaba:arouter-compiler:1.1.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
 }

@@ -40,7 +40,14 @@ public class MyApplication extends MultiDexApplication {
         //初始化ARouter
         initARouter();
         initHttpUtils();
-        mRefWatcher = LeakCanary.install(this);
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        } else {
+            mRefWatcher = LeakCanary.install(this);
+        }
+
     }
 
     //阿里路由

@@ -30,6 +30,7 @@
         <activity android:name=".view.activity.ImagerActivity" />
         <activity android:name=".view.activity.ChoseClassActivity" />
         <activity android:name=".view.activity.ImageCompressActivity" />
+        <activity android:name=".view.activity.LeakActivity" />
 
         <service
             android:name=".services.AidlTestAService"
